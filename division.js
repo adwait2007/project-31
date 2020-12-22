@@ -1,22 +1,18 @@
-class Division {
-    constructor(x,y,w,h){
+class Divisions {
+    constructor(x, y, w, h) {
+        var options = {
 
-     var options={
-
-         isStastic:true
-
-     }
-     this.x=x;
-     this.y=y;
-     this.w=w
-     this.h=h
-     this.body=Bodies.rectangle(x,y,w,h,options);
-     World.add(world,this.body);
+            isStatic: true
+        }
+        this.body = Bodies.rectangle(x, y, w, h, options);
+        this.w = w;
+        this.h = h;
+        World.add(world, this.body);
     }
-    display(){
-        var pos=this.body.position;
+    display() {
+        var pos = this.body.position;
         rectMode(CENTER);
         fill("white");
-        rect(pos.x,pos.y,pos.w,pos.h);
+        rect(pos.x, pos.y, this.w, this.h);
     }
-}
+};
