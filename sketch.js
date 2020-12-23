@@ -4,7 +4,7 @@ const Body=Matter.Body;
 const Bodies=Matter.Bodies;
 
 var engine,world;
-var ground;
+var ground,ground2,ground3;
 
 var particles=[];
 var plinkos=[];
@@ -22,6 +22,11 @@ function setup(){
   world=engine.world;
 
   ground=new Ground(240,795,width,10);
+  
+  ground2=new Ground(478,250,5,500);
+
+  ground3=new Ground(2,250,5,500);
+
 
   for(var k=0;k<=width;k=k+80){
     divisions.push(new Division(k,height-divisionHeight/2,10,divisionHeight))
@@ -84,5 +89,9 @@ function draw(){
   }
 
   ground.display();
+
+  fill("brown");
+  ground2.display();
+  ground3.display();
 
 }

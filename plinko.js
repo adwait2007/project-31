@@ -3,7 +3,7 @@ class Plinko {
         var options={
             restitution:1,
             friction:0,
-            isStactic:true
+            isStatic:true
         }
         this.x=x;
         this.y=y;

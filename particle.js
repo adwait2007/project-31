@@ -1,8 +1,7 @@
 class Particle {
     constructor(x,y,r){
         var options={   
-            isStactic:false,
-            friction:0.4,
+            isStatic:false,
             restitution:1
         }
         this.x=x;
